@@ -4,18 +4,23 @@ class Station
 		@trains = []
 		@name = name
 	end
+	
 	def trains_count
 		@trains.length
 	end
+
 	def add_train(train)
 		@trains << train
 	end
+
 	def trains
 		@trains
 	end
+
 	def trains_by_type(type)
 		@trains.select {|train| train.type == type }
 	end
+
 	def depart_train(train)
 		if trains.include?(train)
 			trains.delete(train)

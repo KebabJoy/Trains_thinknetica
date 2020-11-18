@@ -5,9 +5,11 @@ class Route
 		@stations << finish
 		@stations.unshift(start)
 	end
+
 	def add_station(station)
-		@stations.insert(stations.index(stations.last-1,station)
+		@stations.insert(stations.index(stations.last-1,station))
 	end
+
 	def print_stations
 		stations.each do |station|
 			puts station

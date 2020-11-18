@@ -71,5 +71,7 @@ class Train
 	end
 end
 
+#clear
+
 
 
